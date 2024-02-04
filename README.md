@@ -1,5 +1,5 @@
-## Este repositório contém uma série de resoluções de algoritmos para o Programa de Formação da DB.
-### Os desafios serão resolvidos em Python. Para checar mais detalhes sobre cada um, confira-os individualmente.
+### Este repositório contém uma série de resoluções de algoritmos para o Programa de Formação da DB.
+#### Os desafios serão resolvidos em Python. Para checar mais detalhes sobre cada um, confira-os individualmente.
 
 Lista:
 * Leia um número até que o usuário digite 10;
