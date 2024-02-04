@@ -1,4 +1,4 @@
-# Desafio: Gere 10 números aleatórios entre 0 e 100; mostre todos na tela (em uma única linha); identifique o menor e o maior deles;
+# Desafio 4: Gere 10 números aleatórios entre 0 e 100; mostre todos na tela (em uma única linha); identifique o menor e o maior deles;
 
 import random  # Importanto a biblioteca random para lidar com operações envolvendo números aleatórios em Python.
 def definindo_aleatorio():

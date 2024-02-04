@@ -1,4 +1,4 @@
-# Para cada produto informado (nome, preço e quantidade), escreva o nome do produto comprado e o valor total a ser pago, considerando que são oferecidos descontos pelo número de unidades compradas, segundo a tabela abaixo: a. Até 10 unidades: valor total b. De 11 a 20 unidades: 10% de desconto c. De 21 a 50 unidades: 20% de desconto d. Acima de 50 unidades: 25% de desconto;
+# Desafio 6: Para cada produto informado (nome, preço e quantidade), escreva o nome do produto comprado e o valor total a ser pago, considerando que são oferecidos descontos pelo número de unidades compradas, segundo a tabela abaixo: a. Até 10 unidades: valor total b. De 11 a 20 unidades: 10% de desconto c. De 21 a 50 unidades: 20% de desconto d. Acima de 50 unidades: 25% de desconto;
 
 def calcular_desconto(quantidade_tabela):
     if quantidade_tabela <= 10:
@@ -12,13 +12,14 @@ def calcular_desconto(quantidade_tabela):
     
 def compras():
     nome_produto = input(str("Digite o nome do produto: "))
-    try:
+
+    try:  # Testando se o preço é um valor válido.
         preco_produto = float(input("Digite o preço do produto: "))
     except ValueError as e:
         print(f"Erro: {e}")
         return
     
-    try:
+    try:  # Testando se a quantia é um valor válido.
         quantidade_produto = int(input("Digite a quantidade do produto: "))
     except ValueError as e:
         print(f"Erro: {e}")
@@ -30,15 +31,8 @@ def compras():
     valor_total = valor_cada * quantidade_produto  # Esse valor representa o valor total que o usuário irá pagar.
 
     if quantidade_produto <= 10:
-        desconto_tabela = 0
         print(f"O produto {nome_produto} não terá desconto, saindo pelo valor de R${preco_produto:.2f}.")
-    elif quantidade_produto > 10 and quantidade_produto <= 20:
+    else: 
         print(f"O produto {nome_produto.capitalize()} terá desconto de R${multiplicacao_desconto:.2f}, saindo pelo valor de R${valor_cada:.2f} cada, dando no total o valor de R${valor_total:.2f}.")
-    elif quantidade_produto > 20 and quantidade_produto <= 50:
-        print(f"O produto {nome_produto.capitalize()} terá desconto de R${multiplicacao_desconto:.2f}, saindo pelo valor de R${valor_cada:.2f} cada, dando no total o valor de R${valor_total:.2f}.")
-    elif quantidade_produto > 50:
-        print(f"O produto {nome_produto.capitalize()} terá desconto de R${multiplicacao_desconto:.2f}, saindo pelo valor de R${valor_cada:.2f} cada, dando no total o valor de R${valor_total:.2f}.")
-    else:  # Resolvi inserir os elifs 
-        print("Caráter inválido, tente novamente")
 
 compras()

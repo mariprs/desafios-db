@@ -1,4 +1,4 @@
-# Desafio: Definir a idade de uma pessoa e verificar se ela é maior de idade ou não;
+# Desafio 2: Definir a idade de uma pessoa e verificar se ela é maior de idade ou não;
 
 def definir_maioridade(idade):
     # idade = 0
